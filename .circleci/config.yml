@@ -16,7 +16,7 @@ jobs:
     <<: *default
     steps:
       - check_out
-      - run: npm i
+      # - run: npm i
       - run:
           name: "build run npm lint"
           command: npm run lint 
@@ -58,3 +58,4 @@ workflows:
       - analyze:
           requires:
             - test
+
