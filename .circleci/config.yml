@@ -28,6 +28,7 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - check_out
+      - run: npm i
       - run:
           name: "test"
           command: npm run test
