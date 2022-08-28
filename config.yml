@@ -1,4 +1,4 @@
-version: 2.1 
+version: 2.1
 commands:
   check_out:
     description: "Checks out"
@@ -16,7 +16,7 @@ jobs:
     <<: *default
     steps:
       - check_out
-      - run: npm i
+      #- run: npm i
       - run:
           name: "build run npm lint"
           command: npm run lint 
