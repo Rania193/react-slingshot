@@ -6,7 +6,7 @@ commands:
       - checkout
 default: &default
   docker:
-    - image: cimg/base:stable
+    - image: node:13-alpine
 jobs:
   build:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
